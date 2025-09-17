@@ -89,11 +89,11 @@
 
         QWERTY {
             bindings = <
-&lt 1 ESC       &kp N1        &kp N2     &kp N3                  &kp N4       &kp N5              &kp N6               &kp N7     &kp N8                 &kp N9          &kp N0          &kp BACKSPACE
-&kp TAB         &kp Q         &kp W      &kp E                   &kp R        &kp T               &kp Y                &kp U      &kp I                  &kp O           &kp P           &kp BSLH
-&mt LCTRL ESC   &kp A         &lt 2 S    &mt DELETE D            &lt 3 F      &kp G               &kp H                &kp J      &kp K                  &kp L           &kp SEMI        &kp SQT
-&kp LEFT_SHIFT  &kp Z         &kp X      &mt LEFT_SHIFT C        &kp V        &kp B               &kp N                &kp M      &mt RIGHT_SHIFT COMMA  &kp DOT         &kp UP_ARROW    &kp FSLH
-&caps_word      &kp LEFT_WIN  &kp RCTRL  &mt LEFT_ALT BACKSPACE  &lt 4 SPACE  &lt 3 LEFT_CONTROL  &mt RIGHT_GUI ENTER  &mkp LCLK  &mkp RCLK              &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&lt 1 ESC       &kp N1        &kp N2     &kp N3                  &kp N4       &kp N5              &kp N6     &kp N7               &kp N8                 &kp N9          &kp N0          &kp BACKSPACE
+&kp TAB         &kp Q         &kp W      &kp E                   &kp R        &kp T               &kp Y      &kp U                &kp I                  &kp O           &kp P           &kp BSLH
+&mt LCTRL ESC   &kp A         &lt 2 S    &mt DELETE D            &lt 3 F      &kp G               &kp H      &kp J                &kp K                  &kp L           &kp SEMI        &kp SQT
+&kp LEFT_SHIFT  &kp Z         &kp X      &mt LEFT_SHIFT C        &kp V        &kp B               &kp N      &kp M                &mt RIGHT_SHIFT COMMA  &kp DOT         &kp UP_ARROW    &kp FSLH
+&caps_word      &kp LEFT_WIN  &kp RCTRL  &mt LEFT_ALT BACKSPACE  &lt 4 SPACE  &lt 3 LEFT_CONTROL  &mkp RCLK  &mt RIGHT_GUI ENTER  &mkp LCLK              &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -122,7 +122,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
