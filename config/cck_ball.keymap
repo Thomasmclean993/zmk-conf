@@ -47,27 +47,6 @@
         tap-ms = <100>;
     };
 
-    Tabto5: Tabto5 {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TABTO5";
-        #binding-cells = <0>;
-        bindings = <&kp TAB>, <&mo 0>;
-    };
-
-    ALTtoBKSP: ALTtoBKSP {
-        compatible = "zmk,behavior-tap-dance";
-        label = "ALTTOBKSP";
-        #binding-cells = <0>;
-        bindings = <&kp LEFT_ALT>, <&kp BACKSPACE>;
-    };
-
-    CTRLto4: CTRLto4 {
-        compatible = "zmk,behavior-tap-dance";
-        label = "CTRLTO4";
-        #binding-cells = <0>;
-        bindings = <&kp LCTRL>, <&mo 4>;
-    };
-
     behaviors {
     };
 
@@ -143,7 +122,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
