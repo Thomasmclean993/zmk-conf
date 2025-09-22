@@ -53,32 +53,32 @@
     combos {
         compatible = "zmk,combos";
 
-        Left-ctrl {
+        Left_ctrl {
             bindings = <&kp LCTRL>;
             key-positions = <15 16>;
         };
 
-        Left-alt {
+        Left_alt {
             bindings = <&kp LEFT_ALT>;
             key-positions = <39 40>;
         };
 
-        Left-gui {
+        Left_gui {
             bindings = <&kp LEFT_GUI>;
             key-positions = <37 38>;
         };
 
-        Left-RCLK {
+        Left_RCLK {
             bindings = <&mkp RCLK>;
             key-positions = <25 26>;
         };
 
-        Left-LCLK {
+        Left_LCLK {
             bindings = <&mkp LCLK>;
             key-positions = <27 28>;
         };
 
-        Left-Shift {
+        Left_Shift {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <14 15>;
         };
@@ -152,7 +152,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
