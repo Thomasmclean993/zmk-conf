@@ -53,59 +53,64 @@
     combos {
         compatible = "zmk,combos";
 
-        Left-Hand-Lclk {
-            bindings = <&mkp LCLK>;
-            key-positions = <28 29>;
+        Left-ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <15 16>;
         };
 
-        Enter {
-            bindings = <&kp ENTER>;
+        Left-alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <39 40>;
+        };
+
+        Left-gui {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <37 38>;
+        };
+
+        Left-RCLK {
+            bindings = <&mkp RCLK>;
+            key-positions = <25 26>;
+        };
+
+        Left-LCLK {
+            bindings = <&mkp LCLK>;
+            key-positions = <27 28>;
+        };
+
+        Left-Shift {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <14 15>;
+        };
+
+        Right-Ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <19 20>;
+        };
+
+        Right-Alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <43 44>;
+        };
+
+        Right-gui {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <45 46>;
+        };
+
+        Right-RCLK {
+            bindings = <&mkp RCLK>;
+            key-positions = <33 34>;
+        };
+
+        Right-LCLK {
+            bindings = <&mkp LCLK>;
             key-positions = <31 32>;
         };
 
-        Left-Click {
-            bindings = <&mkp LCLK>;
-            key-positions = <30 31>;
-        };
-
-        Right-Click {
-            bindings = <&mkp RCLK>;
-            key-positions = <32 33>;
-        };
-
-        Left-Hand-Rclk {
-            bindings = <&mkp RCLK>;
-            key-positions = <26 27>;
-        };
-
-        Right-Hand-Alt {
-            bindings = <&kp RIGHT_ALT>;
-            key-positions = <42 43>;
-        };
-
-        Right-Hand-Ctrl {
-            bindings = <&kp RCTRL>;
-            key-positions = <18 19>;
-        };
-
-        Right-Hand-Gui {
-            bindings = <&kp RIGHT_GUI>;
-            key-positions = <32 33>;
-        };
-
-        Left-Hand-Alt {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <40 41>;
-        };
-
-        Left-Hand-Ctrl {
-            bindings = <&kp LCTRL>;
-            key-positions = <16 17>;
-        };
-
-        Left-Hand-Gui {
-            bindings = <&kp LEFT_WIN>;
-            key-positions = <27 26>;
+        Right-Shift {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <20 21>;
         };
     };
 
@@ -147,7 +152,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
