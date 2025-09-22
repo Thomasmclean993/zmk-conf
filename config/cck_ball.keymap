@@ -90,7 +90,7 @@
 
         Right-Hand-Gui {
             bindings = <&kp RIGHT_GUI>;
-            key-positions = <30 31 32 33>;
+            key-positions = <32 33>;
         };
 
         Left-Hand-Alt {
@@ -105,7 +105,7 @@
 
         Left-Hand-Gui {
             bindings = <&kp LEFT_WIN>;
-            key-positions = <29 28 27 26>;
+            key-positions = <27 26>;
         };
     };
 
@@ -147,7 +147,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
