@@ -53,13 +53,8 @@
     combos {
         compatible = "zmk,combos";
 
-        Delete {
-            bindings = <&kp DELETE>;
-            key-positions = <27 28>;
-        };
-
-        Backspace {
-            bindings = <&kp BACKSPACE>;
+        Left-Hand-Lclk {
+            bindings = <&mkp LCLK>;
             key-positions = <28 29>;
         };
 
@@ -78,9 +73,39 @@
             key-positions = <32 33>;
         };
 
-        Backpage {
-            bindings = <&kp K_BACK>;
+        Left-Hand-Rclk {
+            bindings = <&mkp RCLK>;
             key-positions = <26 27>;
+        };
+
+        Right-Hand-Alt {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <42 43>;
+        };
+
+        Right-Hand-Ctrl {
+            bindings = <&kp RCTRL>;
+            key-positions = <18 19>;
+        };
+
+        Right-Hand-Gui {
+            bindings = <&kp RIGHT_GUI>;
+            key-positions = <6 7>;
+        };
+
+        Left-Hand-Alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <40 41>;
+        };
+
+        Left-Hand-Ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <16 17>;
+        };
+
+        Left-Hand-Gui {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <4 5>;
         };
     };
 
@@ -122,7 +147,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
