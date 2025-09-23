@@ -55,27 +55,27 @@
 
         Left_ctrl {
             bindings = <&kp LCTRL>;
-            key-positions = <15 16>;
+            key-positions = <16 17>;
         };
 
         Left_alt {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <39 40>;
+            key-positions = <40 41>;
         };
 
         Left_gui {
             bindings = <&kp LEFT_GUI>;
-            key-positions = <37 38>;
+            key-positions = <38 39>;
         };
 
         Left_RCLK {
             bindings = <&mkp RCLK>;
-            key-positions = <25 26>;
+            key-positions = <26 27>;
         };
 
         Left_LCLK {
             bindings = <&mkp LCLK>;
-            key-positions = <27 28>;
+            key-positions = <28 29>;
         };
 
         Left_Shift {
@@ -85,27 +85,27 @@
 
         Right_Ctrl {
             bindings = <&kp LCTRL>;
-            key-positions = <19 20>;
+            key-positions = <19 18>;
         };
 
         Right_Alt {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <43 44>;
+            key-positions = <43 42>;
         };
 
         Right_gui {
             bindings = <&kp LEFT_GUI>;
-            key-positions = <45 46>;
+            key-positions = <45 44>;
         };
 
         Right_RCLK {
             bindings = <&mkp RCLK>;
-            key-positions = <33 34>;
+            key-positions = <32 33>;
         };
 
         Right_LCLK {
             bindings = <&mkp LCLK>;
-            key-positions = <31 32>;
+            key-positions = <31 30>;
         };
 
         Right_Shift {
@@ -152,7 +152,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
