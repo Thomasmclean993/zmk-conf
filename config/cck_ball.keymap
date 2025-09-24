@@ -47,15 +47,6 @@
         tap-ms = <100>;
     };
 
-    left_to_right_clk: left_to_right_clk {
-        compatible = "zmk,behavior-tap-dance";
-        label = "LEFT_TO_RIGHT_CLK";
-        #binding-cells = <0>;
-        bindings = <&mkp LCLK>, <&mkp RCLK>;
-
-        tapping-term-ms = <0>;
-    };
-
     behaviors {
     };
 
@@ -166,7 +157,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
