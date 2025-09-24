@@ -65,7 +65,7 @@
 
         Left_gui {
             bindings = <&kp LEFT_GUI>;
-            key-positions = <38 39>;
+            key-positions = <14 15>;
         };
 
         Left_RCLK {
@@ -80,7 +80,7 @@
 
         Left_Shift {
             bindings = <&kp LEFT_SHIFT>;
-            key-positions = <14 15>;
+            key-positions = <38 39>;
         };
 
         Right_Ctrl {
@@ -95,7 +95,7 @@
 
         Right_gui {
             bindings = <&kp LEFT_GUI>;
-            key-positions = <45 44>;
+            key-positions = <20 21>;
         };
 
         Right_RCLK {
@@ -110,7 +110,7 @@
 
         Right_Shift {
             bindings = <&kp LEFT_SHIFT>;
-            key-positions = <20 21>;
+            key-positions = <44 45>;
         };
 
         Right_Enter {
@@ -124,11 +124,11 @@
 
         QWERTY {
             bindings = <
-&lt 1 ESC   &kp N1    &kp N2              &kp N3           &kp N4       &kp N5      &kp N6     &kp N7       &kp N8     &kp N9               &kp N0                          &kp BACKSPACE
-&kp TAB     &kp Q     &kp W               &kp E            &kp R        &lt 3 T     &lt 3 Y    &kp U        &kp I      &kp O                &mt DOUBLE_QUOTES SINGLE_QUOTE  &kp BSLH
-&sl 3       &kp A     &kp S               &kp D            &kp F        &kp G       &kp H      &kp J        &kp K      &kp L                &kp COMMA                       &kp SLASH
-&sl 4       &kp Z     &kp X               &kp C            &kp V        &lt 4 B     &lt 4 N    &kp M        &kp P      &mt COLON PERIOD     &kp LESS_THAN                   &kp GREATER_THAN
-&caps_word  &kp CAPS  &mt LEFT_SHIFT ESC  &lt 3 BACKSPACE  &lt 4 SPACE  &kp DELETE  &mkp RCLK  &lt 4 ENTER  &mkp LCLK  &mt RIGHT_SHIFT ESC  &kp DOWN_ARROW                  &kp RIGHT_ARROW
+&lt 1 ESC   &kp N1    &kp N2            &kp N3           &kp N4       &kp N5      &kp N6         &kp N7       &kp N8     &kp N9             &kp N0                          &kp BACKSPACE
+&kp TAB     &kp Q     &kp W             &kp E            &kp R        &lt 2 T     &lt 2 Y        &kp U        &kp I      &kp O              &mt DOUBLE_QUOTES SINGLE_QUOTE  &kp BSLH
+&sl 3       &kp A     &kp S             &kp D            &kp F        &kp G       &kp H          &kp J        &kp K      &kp L              &kp COMMA                       &kp SLASH
+&sl 4       &kp Z     &kp X             &kp C            &kp V        &lt 4 B     &lt 4 N        &kp M        &kp P      &kp PERIOD         &kp LESS_THAN                   &kp GREATER_THAN
+&caps_word  &kp CAPS  &mt LEFT_ALT ESC  &lt 3 BACKSPACE  &lt 4 SPACE  &kp DELETE  &kp RIGHT_WIN  &lt 4 ENTER  &mkp LCLK  &mt RIGHT_ALT ESC  &kp DOWN_ARROW                  &kp RIGHT_ARROW
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -157,7 +157,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
