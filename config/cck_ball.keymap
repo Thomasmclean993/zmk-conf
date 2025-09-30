@@ -54,18 +54,18 @@
         bindings = <&mt LEFT_ALT SPACE>, <&kp UNDER>;
     };
 
-    period_to_colon: period_to_colon {
+    period_Hcomma_to_colon: period_Hcomma_to_colon {
         compatible = "zmk,behavior-tap-dance";
-        label = "PERIOD_TO_COLON";
+        label = "PERIOD_HCOMMA_TO_COLON";
         #binding-cells = <0>;
-        bindings = <&kp PERIOD>, <&kp COLON>;
+        bindings = <&mt COMMA PERIOD>, <&kp COLON>;
     };
 
     Esc_2caps_shift: Esc_2caps_shift {
         compatible = "zmk,behavior-tap-dance";
         label = "ESC_2CAPS_SHIFT";
         #binding-cells = <0>;
-        bindings = <&kp ESC>, <&mt LEFT_SHIFT CAPSLOCK>;
+        bindings = <&mt LEFT_SHIFT ESCAPE>, <&kp CAPS>;
     };
 
     enter_2dash_Halt: enter_2dash_Halt {
@@ -73,13 +73,6 @@
         label = "ENTER_2DASH_HALT";
         #binding-cells = <0>;
         bindings = <&mt RIGHT_ALT ENTER>, <&kp MINUS>;
-    };
-
-    back_2del_H3: back_2del_H3 {
-        compatible = "zmk,behavior-tap-dance";
-        label = "BACK_2DEL_H3";
-        #binding-cells = <0>;
-        bindings = <&lt 3 BACKSPACE>, <&kp DELETE>;
     };
 
     gui_rclk: gui_rclk {
@@ -131,11 +124,11 @@
 
         QWERTY {
             bindings = <
-&trans  &trans  &lt 1 DEL         &kp Q          &kp A             &lt 2 Z           &mt LESS_THAN LEFT_PARENTHESIS  &mt GREATER_THAN RIGHT_PARENTHESIS  &mt EXCLAMATION EQUAL  &kp BACKSPACE     &trans  &trans
-&trans  &trans  &kp W             &kp E          &kp R             &lt 3 T           &lt 3 Y                         &kp U                               &kp I                  &kp O             &trans  &trans
-&trans  &trans  &kp S             &mt LCTRL D    &mt LEFT_GUI F    &lt 4 G           &lt 4 H                         &mt RIGHT_GUI J                     &mt RCTRL K            &kp L             &trans  &trans
-&trans  &trans  &kp X             &mt LG(C) C    &mt LG(V) V       &lt 5 B           &lt 5 N                         &kp M                               &period_to_colon       &kp P             &trans  &trans
-&trans  &trans  &Esc_2caps_shift  &kp BACKSPACE  &spc_2under_Halt  &mt LEFT_GUI TAB  &gui_rclk                       &enter_2dash_Halt                   &mkp LCLK              &Esc_2caps_shift  &trans  &trans
+&trans  &trans  &lt 1 DEL         &kp Q          &kp A             &lt 2 Z           &mt LESS_THAN LEFT_PARENTHESIS  &mt GREATER_THAN RIGHT_PARENTHESIS  &mt EXCLAMATION EQUAL    &kp BACKSPACE     &trans  &trans
+&trans  &trans  &kp W             &kp E          &kp R             &lt 3 T           &lt 3 Y                         &kp U                               &kp I                    &kp O             &trans  &trans
+&trans  &trans  &kp S             &mt LCTRL D    &mt LEFT_GUI F    &lt 4 G           &lt 4 H                         &mt RIGHT_GUI J                     &mt RCTRL K              &kp L             &trans  &trans
+&trans  &trans  &kp X             &mt LG(C) C    &mt LG(V) V       &lt 5 B           &lt 5 N                         &kp M                               &period_Hcomma_to_colon  &kp P             &trans  &trans
+&trans  &trans  &Esc_2caps_shift  &kp BACKSPACE  &spc_2under_Halt  &mt LEFT_GUI TAB  &gui_rclk                       &enter_2dash_Halt                   &mkp LCLK                &Esc_2caps_shift  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -164,7 +157,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
