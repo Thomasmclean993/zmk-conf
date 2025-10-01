@@ -139,6 +139,11 @@
             bindings = <&kp Z>;
             key-positions = <16 17>;
         };
+
+        P_combo {
+            bindings = <&kp P>;
+            key-positions = <19 20>;
+        };
     };
 
     keymap {
@@ -179,7 +184,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
