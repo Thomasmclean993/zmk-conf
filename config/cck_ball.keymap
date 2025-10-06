@@ -184,7 +184,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
@@ -209,7 +209,7 @@
 &trans  &trans  &kp AT_SIGN     &kp PIPE              &kp DOLLAR        &kp SLASH  &kp LEFT_BRACKET                 &kp RIGHT_BRACKET                  &trans             &trans            &trans  &trans
 &trans  &trans  &kp UNDERSCORE  &kp LESS_THAN         &kp GREATER_THAN  &kp CARET  &kp AMPERSAND                    &kp PERCENT                        &kp PIPE           &kp ASTERISK      &none   &none
 &trans  &trans  &kp MINUS       &kp HASH              &kp PLUS          &kp EQUAL  &mt LEFT_BRACE LEFT_PARENTHESIS  &mt RIGHT_BRACE RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &none   &none
-&trans  &trans  &kp TILDE       &kp NON_US_BACKSLASH  &kp SLASH         &kp EXCL   &kp QMARK                        &kp LESS_THAN                      &kp GREATER_THAN   &kp PERIOD        &trans  &none
+&trans  &trans  &kp TILDE       &kp NON_US_BACKSLASH  &kp SLASH         &kp EXCL   &kp QMARK                        &kp LESS_THAN                      &kp GREATER_THAN   &mt COMMA PERIOD  &trans  &none
 &trans  &trans  &trans          &trans                &trans            &trans     &trans                           &trans                             &trans             &trans            &trans  &trans
             >;
         };
