@@ -195,7 +195,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
@@ -227,11 +227,11 @@
 
         Under_layers {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans             &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans             &trans  &trans  &trans
-&trans  &trans  &trans  &kp Q   &kp A   &kp Z   &kp P   &kp COMMA         &kp DOT            &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans             &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans     &trans  &trans            &trans             &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans     &trans  &trans            &trans             &trans  &trans  &trans
+&trans  &trans  &trans  &kp Q   &kp A           &kp Z      &kp P   &kp COMMA         &kp DOT            &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp UNDERSCORE  &kp MINUS  &trans  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans     &trans  &trans            &trans             &trans  &trans  &trans
             >;
         };
     };
