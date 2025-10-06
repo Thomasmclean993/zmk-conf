@@ -89,6 +89,17 @@
         bindings = <&mt EQUAL SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
     };
 
+    mse_clk_to_5: mse_clk_to_5 {
+        compatible = "zmk,behavior-hold-tap";
+        label = "MSE_CLK_TO_5";
+        bindings = <&to>, <&mkp>;
+
+        #binding-cells = <2>;
+        retro-tap;
+        hold-trigger-key-positions = <28 27 29 30 31 32 44 43 42>;
+        tapping-term-ms = <150>;
+    };
+
     behaviors {
     };
 
@@ -155,7 +166,7 @@
 &trans  &trans  &kp W      &kp E            &kp R                        &lt 3 T                        &lt 3 Y                         &kp U                               &kp I                    &kp O                &trans  &trans
 &trans  &trans  &kp S      &mt LCTRL D      &mt LEFT_GUI F               &lt 4 G                        &lt 4 H                         &mt RIGHT_GUI J                     &mt RCTRL K              &kp L                &trans  &trans
 &trans  &trans  &kp X      &mt LG(C) C      &mt LG(V) V                  &lt 5 B                        &lt 5 N                         &kp M                               &period_Hcomma_to_colon  &double_Hsing_equal  &trans  &trans
-&trans  &trans  &kp ESC    &lt 5 BACKSPACE  &spc_2under_Halt             &mt LEFT_GUI TAB               &gui_rclk                       &enter_2dash_Halt                   &mkp LCLK                &kp ESC              &trans  &trans
+&trans  &trans  &kp ESC    &lt 5 BACKSPACE  &spc_2under_Halt             &mt LEFT_GUI TAB               &gui_rclk                       &enter_2dash_Halt                   &mse_clk_to_5 5 LCLK     &kp ESC              &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -184,7 +195,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
