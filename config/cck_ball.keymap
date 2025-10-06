@@ -47,11 +47,11 @@
         tap-ms = <100>;
     };
 
-    spc_2under_Halt: spc_2under_alt {
+    spc_2shift_Halt: spc_2shift_alt {
         compatible = "zmk,behavior-tap-dance";
         label = "Space to 2t:underscore or h:alt";
         #binding-cells = <0>;
-        bindings = <&mt LEFT_ALT SPACE>, <&kp UNDER>;
+        bindings = <&mt LEFT_ALT SPACE>, <&kp LEFT_SHIFT>;
     };
 
     period_Hcomma_to_colon: period_Hcomma_to_colon {
@@ -59,13 +59,6 @@
         label = "PERIOD_HCOMMA_TO_COLON";
         #binding-cells = <0>;
         bindings = <&mt COMMA PERIOD>, <&kp COLON>;
-    };
-
-    Esc_2caps_shift: Esc_2caps_shift {
-        compatible = "zmk,behavior-tap-dance";
-        label = "ESC_2CAPS_SHIFT";
-        #binding-cells = <0>;
-        bindings = <&mt LEFT_SHIFT ESCAPE>, <&kp CAPS>;
     };
 
     enter_2dash_Halt: enter_2dash_Halt {
@@ -166,7 +159,7 @@
 &trans  &trans  &kp W          &kp E            &kp R                        &lt 3 T                        &lt 3 Y                         &kp U                               &kp I                    &kp O                &trans  &trans
 &trans  &trans  &kp S          &kp D            &kp F                        &lt 4 G                        &lt 4 H                         &kp J                               &kp K                    &kp L                &trans  &trans
 &trans  &trans  &kp X          &mt LG(C) C      &mt LG(V) V                  &kp B                          &kp N                           &kp M                               &period_Hcomma_to_colon  &double_Hsing_equal  &trans  &trans
-&trans  &trans  &mt LCTRL ESC  &lt 5 BACKSPACE  &spc_2under_Halt             &mt LEFT_GUI TAB               &gui_rclk                       &enter_2dash_Halt                   &mse_clk_to_5 5 LCLK     &mt RCTRL ESCAPE     &trans  &trans
+&trans  &trans  &mt LCTRL ESC  &lt 5 BACKSPACE  &spc_2shift_Halt             &mt LEFT_GUI TAB               &gui_rclk                       &enter_2dash_Halt                   &mse_clk_to_5 5 LCLK     &mt RCTRL ESCAPE     &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -195,7 +188,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
